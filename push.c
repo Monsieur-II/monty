@@ -24,7 +24,7 @@ void s_push(stack_t **stack, unsigned int line_number)
 	}
 	if (!data || check == 1)
 	{
-		fprintf(stderr, "L%d: usage: push integer", line_number);
+		fprintf(stderr, "L%d: usage: push integer\n", line_number);
 		free(tool.buffer);
 		fclose(tool.file);
 		free_dlist(*stack);
