@@ -12,6 +12,7 @@ void execute_cmd(stack_t **stack, unsigned int line_number)
 	instruction_t ops[] = {
 		{"push", s_push},
 		{"pall", s_pall},
+		{"pint", s_pint},
 		{NULL, NULL}
 	};
 

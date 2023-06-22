@@ -67,5 +67,6 @@ void execute_cmd(stack_t **stack, unsigned int line_number);
 void s_push(stack_t **stack, unsigned int line_number);
 void free_dlist(stack_t *head);
 void s_pall(stack_t **stack, unsigned int line_number);
+void s_pint(stack_t **stack, unsigned int line_number);
 
 #endif
