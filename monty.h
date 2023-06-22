@@ -72,5 +72,6 @@ void s_pop(stack_t **stack, unsigned int line_number);
 void s_swap(stack_t **stack, unsigned int line_number);
 void s_add(stack_t **stack, unsigned int line_number);
 void s_nop(stack_t **stack, unsigned int line_number);
+void s_sub(stack_t **stack, unsigned int line_number);
 
 #endif
