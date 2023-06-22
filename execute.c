@@ -26,7 +26,7 @@ void execute_cmd(stack_t **stack, unsigned int line_number)
 		i++;
 	}
 
-	fprintf(stderr, "L%d: unknown instruction %s\n", line_number, command);
+	fprintf(stderr, "L%u: unknown instruction %s\n", line_number, command);
 	free_dlist(*stack);
 	fclose(tool.file);
 	free(tool.buffer);
