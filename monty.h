@@ -60,6 +60,8 @@ typedef struct monty_s
 extern monty_t tool;
 
 /*Functions*/
-
+void tokenize(char *str, char **args, int max_args, char *delimiters);
+stack_t *add_node(stack_t **head, const int n);
+stack_t *add_dnode_end(stack_t **head, const int n);
 
 #endif

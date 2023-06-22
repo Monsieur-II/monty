@@ -2,6 +2,13 @@
 
 monty_t tool = {NULL, NULL, NULL};
 
+/**
+ * main - entry point
+ * @argc: arg count
+ * @argv: arg vector
+ *
+ * Return: 0 on success
+ */
 int main(int argc, char **argv)
 {
 	stack_t *head = NULL;
