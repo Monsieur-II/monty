@@ -31,5 +31,8 @@ void s_push(stack_t **stack, unsigned int line_number)
 		exit(EXIT_FAILURE);
 	}
 	n = atoi(data);
-	add_dnode(stack, n);
+	if (tool.mode == 0)
+		add_dnode(stack, n);
+	else if (tool.mode == 1)
+		add_dnode_end(stack, n);
 }

@@ -1,6 +1,6 @@
 #include "monty.h"
 
-monty_t tool = {NULL, NULL, {NULL}};
+monty_t tool = {NULL, NULL, {NULL}, 0};
 
 /**
  * main - entry point
