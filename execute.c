@@ -18,6 +18,7 @@ void execute_cmd(stack_t **stack, unsigned int line_number)
 		{"add", s_add},
 		{"nop", s_nop},
 		{"sub", s_sub},
+		{"div", s_div},
 		{NULL, NULL}
 	};
 
