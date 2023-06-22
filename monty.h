@@ -70,5 +70,6 @@ void s_pall(stack_t **stack, unsigned int line_number);
 void s_pint(stack_t **stack, unsigned int line_number);
 void s_pop(stack_t **stack, unsigned int line_number);
 void s_swap(stack_t **stack, unsigned int line_number);
+void s_add(stack_t **stack, unsigned int line_number);
 
 #endif
