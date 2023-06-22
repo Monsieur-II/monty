@@ -21,6 +21,7 @@ void execute_cmd(stack_t **stack, unsigned int line_number)
 		{"div", s_div},
 		{"mul", s_mul},
 		{"mod", s_mod},
+		{"pchar", s_pchar},
 		{NULL, NULL}
 	};
 
