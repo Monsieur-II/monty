@@ -28,6 +28,8 @@ void execute_cmd(stack_t **stack, unsigned int line_number)
 		{NULL, NULL}
 	};
 
+	if (!command)
+		return;
 	if (command && (command[0] == '#'))
 		return;
 
