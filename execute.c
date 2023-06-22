@@ -13,6 +13,7 @@ void execute_cmd(stack_t **stack, unsigned int line_number)
 		{"push", s_push},
 		{"pall", s_pall},
 		{"pint", s_pint},
+		{"pop", s_pop},
 		{NULL, NULL}
 	};
 
