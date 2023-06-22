@@ -32,7 +32,6 @@ void execute_cmd(stack_t **stack, unsigned int line_number)
 
 	if ((command && (command[0] == '#')) || !command)
 		return;
-
 	while (ops[i].opcode && command)
 	{
 		if (strcmp(ops[i].opcode, command) == 0)
