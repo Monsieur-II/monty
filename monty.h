@@ -23,9 +23,9 @@
  */
 typedef struct stack_s
 {
-        int n;
-        struct stack_s *prev;
-        struct stack_s *next;
+	int n;
+	struct stack_s *prev;
+	struct stack_s *next;
 } stack_t;
 
 /**
@@ -38,17 +38,17 @@ typedef struct stack_s
  */
 typedef struct instruction_s
 {
-        char *opcode;
-        void (*f)(stack_t **stack, unsigned int line_number);
+	char *opcode;
+	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
 /**
- * monty_s - extern struct
+ * struct monty_s - extern struct
  * @file: file stream
  * @buffer: buffer
  * @args: tokenized string
  *
- * Description - extern struct
+ * Description: extern struct
  */
 typedef struct monty_s
 {
@@ -61,7 +61,11 @@ extern monty_t tool;
 
 /*Functions*/
 void tokenize(char *str, char **args, int max_args, char *delimiters);
-stack_t *add_node(stack_t **head, const int n);
+stack_t *add_dnode(stack_t **head, const int n);
 stack_t *add_dnode_end(stack_t **head, const int n);
+void execute_cmd(stack_t **stack, unsigned int line_number);
+void s_push(stack_t **stack, unsigned int line_number);
+void free_dlist(stack_t *head);
+void s_pall(stack_t **stack, unsigned int line_number);
 
 #endif

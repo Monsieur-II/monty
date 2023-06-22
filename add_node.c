@@ -8,7 +8,7 @@
  * Return: address of new node or NULL if it failed
  */
 
-stack_t *add_node(stack_t **head, const int n)
+stack_t *add_dnode(stack_t **head, const int n)
 {
 	stack_t *new_node = NULL;
 
@@ -18,7 +18,7 @@ stack_t *add_node(stack_t **head, const int n)
 		fprintf(stderr, "Error: malloc failed\n");
 		free(tool.buffer);
 		fclose(tool.file);
-		/*free stack*/
+		free_dlist(*head);
 		exit(EXIT_FAILURE);
 	}
 

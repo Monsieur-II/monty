@@ -17,7 +17,7 @@ stack_t *add_dnode_end(stack_t **head, const int n)
 		fprintf(stderr, "Error: malloc failed\n");
 		free(tool.buffer);
 		fclose(tool.file);
-		/*free stack*/
+		free_dlist(*head);
 		exit(EXIT_FAILURE);
 	}
 	new_node->n = n;
