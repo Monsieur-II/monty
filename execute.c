@@ -16,6 +16,7 @@ void execute_cmd(stack_t **stack, unsigned int line_number)
 		{"pop", s_pop},
 		{"swap", s_swap},
 		{"add", s_add},
+		{"nop", s_nop},
 		{NULL, NULL}
 	};
 
