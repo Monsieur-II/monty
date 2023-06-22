@@ -24,6 +24,9 @@ void execute_cmd(stack_t **stack, unsigned int line_number)
 		{NULL, NULL}
 	};
 
+	if (command && (command[0] == '#'))
+		return;
+
 	while (ops[i].opcode && command)
 	{
 		if (strcmp(ops[i].opcode, command) == 0)
