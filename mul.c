@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * s_mul - adds the top two elements
+ * s_mul - multiplies the top two elements
  * @stack: address of pointer to head of list
  * @line_number: current line
  *
