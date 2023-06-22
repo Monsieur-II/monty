@@ -28,9 +28,7 @@ void execute_cmd(stack_t **stack, unsigned int line_number)
 		{NULL, NULL}
 	};
 
-	if (!command)
-		return;
-	if (command && (command[0] == '#'))
+	if ((command && (command[0] == '#')) || !command)
 		return;
 
 	while (ops[i].opcode && command)

@@ -47,6 +47,7 @@ typedef struct instruction_s
  * @file: file stream
  * @buffer: buffer
  * @args: tokenized string
+ * @mode: mode of linked list
  *
  * Description: extern struct
  */
