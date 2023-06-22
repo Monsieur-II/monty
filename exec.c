@@ -24,6 +24,7 @@ void execute_cmd(stack_t **stack, unsigned int line_number)
 		{"pchar", s_pchar},
 		{"pstr", s_pstr},
 		{"rotl", s_rotl},
+		{"rotr", s_rotr},
 		{"stack", s_stack},
 		{"queue", s_queue},
 		{NULL, NULL}
